@@ -23,11 +23,38 @@
 			text-shadow: -4px 3px 2px green;
 			font-weight: bold;
 		}
+		#contenedor{
+			display: flex;
+		}
+
 		#div1{
 			background-color: lightgreen;
 			display: inline-block;
 			width: 400px;
 			height: 200px;
+		}
+		#div2{
+			background-color: lightblue;
+			display: block;
+			width: 400px;
+			height: 200px;
+		}
+		#div3{
+			background-color: lightpink;
+			display: inline-block;
+			width: 400px;
+			height: 200px;
+		}
+
+		.bloque1{
+			display: inline-block;
+			width: 100px;
+			height: 50px;		
+		}
+		.bloque2{
+			display: block;
+			width: 100px;
+			height: 50px;
 		}
 	</style>
 
@@ -37,17 +64,27 @@
 	<p id=parrafo3>Como no hay dos sin tres, este será el tercero con un tipo de letra diferente y un 20% más grande</p>
 	<p id=parrafo4> Y por último, un texto en negrita y con sombrita en verde</p>
 
-	<div id="div1">
-		<p>Buscadores:</p>
-		<p id=google><a href="https://www.google.com/?hl=es">Google</a></p>
-		<p><a href="https://www.opera.com/es">Opera</a></p>
-		<p><a href="https://www.microsoft.com/es-es/edge/?form=MA13FJ">Microsoft Edge</a></p>
-	</div>
+	<div id="contenedor">
+		<div id="div1">
+			<p>Buscadores:</p>
+			<div class="bloque1" style="background-color: red;"><a href="https://www.google.com/?hl=es" style="color: white;">Google</a></div>
+			<div class="bloque1" style="background-color: green;"><a href="https://www.opera.com/es" style="color: white;">Opera</a></div>
+			<div class="bloque1" style="background-color: blue;"><a href="https://www.microsoft.com/es-es/edge/?form=MA13FJ" style="color: white;">Microsoft Edge</a></div>
+		</div>
 
-	<div id="div2">
-		
-	</div>
-	<div id="div3">
+		<div id="div2">
+			<p>Redes Sociales:</p>
+			<div class="bloque2" style="background-color: red;"><a href="https://www.facebook.com/?locale=es_ES" style="color: white;">Facebook</a></div>
+			<div class="bloque2" style="background-color: green;"><a href="https://www.instagram.com/" style="color: white;">Instagram</a></div>
+			<div class="bloque2" style="background-color: blue;"><a href="https://x.com/?lang=es" style="color: white;">Twitter</a></div>
+		</div>
+
+		<div id="div3">
+			<p>Noticias:</p>
+			<a href="https://elpais.com/">El Pais</a>
+			<a href ="https://www.elmundo.es/">El Mundo</a>
+			<a href="https://www.eldiario.es/">El Diario</a>
+		</div>
 	</div>
 </body>
 </html>
