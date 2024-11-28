@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actividad 4.1 con Bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<h1>CSS: Ejercicio 1</h1>
+	<p class="text-end fst-italic">Este es el párrafo número 1 en cursiva y alineado a la derecha</p>
+	<p class="text-uppercase text-decoration-line-through">Este también es un párrafo en minúsculas pero convertido en mayúsculas y tachado..</p>
+	<p class="fs-4">Como no hay dos sin tres, este será el tercero con un tipo de letra diferente y un 20% más grande</p>
+	<p class="fw-bold" style="text-shadow: -4px 3px 2px green;"> Y por último, un texto en negrita y con sombrita en verde</p>
+
+	<div class="d-flex justify-content mt-4">
+		<div class="card rounded p-3 bg-success-subtle col-2 p-3">
+			<div class="card-body">
+				<p class="card-title">Buscadores:</p>
+				<div class="d-inline-block p-2 btn btn-danger text-white me-2"><a href="https://www.google.com/?hl=es" class="text-white text-decoration-none">Google</a></div>
+				<div class="d-inline-block p-2 btn btn-success text-white me-2"><a href="https://www.opera.com/es" class="text-white text-decoration-none">Opera</a></div>
+				<div class="d-inline-block p-2 btn btn-primary text-white"><a href="https://www.microsoft.com/es-es/edge/?form=MA13FJ" class="text-white text-decoration-none">Microsoft Edge</a></div>
+			</div>
+		</div>
+
+		<div class="card rounded p-3 bg-info-subtle col-2 p-3">
+			<div class="card-body">
+				<p class="card-title text-start">Redes Sociales:</p>
+				<div class="p-2 btn btn-danger text-white mb-0"><a href="https://www.facebook.com/?locale=es_ES" class="text-white text-decoration-none">Facebook</a></div>
+				<br>
+				<div class="p-2 btn btn-success text-white mb-0"><a href="https://www.instagram.com/" class="text-white text-decoration-none">Instagram</a></div>
+				<br>
+				<div class="p-2 btn btn-primary text-white mb-0"><a href="https://x.com/?lang=es" class="text-white text-decoration-none">Twitter</a></div>
+			</div>
+		</div>
+
+		<div class="card rounded p-3 bg-danger-subtle col-2 p-3">
+			<div class="card-body">
+				<p class="card-title text-start">Noticias:</p>
+				<a href="https://elpais.com/" class="text-decoration-none">El Pais</a>
+				<a href ="https://www.elmundo.es/" class="text-decoration-none">El Mundo</a>
+				<a href="https://www.eldiario.es/" class="text-decoration-none">El Diario</a>
+			</div>
+		</div>
+	</div>
+	<a href="../index.html" class="btn btn-link mt-3">Inicio</a>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
